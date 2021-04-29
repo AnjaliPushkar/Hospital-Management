@@ -21,4 +21,8 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name="home1"),
+    path("validate/", views.validate, name="validate"),
+    path("appointment/", views.appointment, name="appointment"),
+    # path("validate/", views.validate, name="validate"),
+    # path("validate/", views.validate, name="validate"),
 ]

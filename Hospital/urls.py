@@ -23,6 +23,8 @@ urlpatterns = [
     path("", views.home, name="home1"),
     path("validate/", views.validate, name="validate"),
     path("appointment/", views.appointment, name="appointment"),
-    # path("validate/", views.validate, name="validate"),
-    # path("validate/", views.validate, name="validate"),
+    path("staffsSignup/", views.staffsSignup, name="staffsSignup"),
+    path("staffsLogin/", views.staffsLogin, name="staffsLogin"),
+    path("Users-Login/", views.Users_Login, name="Users-Login"),
+    path("Users_signup/", views.Users_signup, name="Users_signup"),
 ]

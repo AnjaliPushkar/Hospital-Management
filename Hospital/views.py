@@ -9,3 +9,15 @@ def validate(request):
 
 def appointment(request):
     return render(request, 'appointment.html')
+
+def staffsSignup(request):
+    return render(request, 'staffsSignup.html')
+
+def staffsLogin(request):
+    return render(request, 'staffsLogin.html')
+
+def Users_Login(request):
+    return render(request, 'Users-Login.html')
+
+def Users_signup(request):
+    return render(request, 'Users-signup.html')

@@ -49,12 +49,22 @@ dd {
   margin-left: 0;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
+.container{
+  position: relative;
+  color: white;
 }
 
- .carousel-item{
+ .top-left{
+  position:absolute;
+  top:10px;
+  left:20px;
+}
+
+.image1{
+  width:100%;
+}
+
+ /* .carousel-item{
    background-image: url("../static/images/mask.jpg");
  }
 
@@ -65,7 +75,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
- }
+ } */
 
 svg {
   overflow: hidden;

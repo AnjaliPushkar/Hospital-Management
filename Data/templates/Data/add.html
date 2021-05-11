@@ -6,18 +6,20 @@
   </head>
   <body>
     <div class="add-details">
+
       <form class="" action="#" method="post">
+        {% csrf_token %}
         <div class="container">
           <label for="name"><b>Name</b></label>
-          <input type="text" placeholder="Enter name" name="username" id="username">
-          <label for="Aadhar"><b>Aadhar Card No.</b></label>
-          <input type="text" placeholder="Enter Aadhar Card No." name="Aadhar" id="aadhar">
+          <input type="text" placeholder="Enter name" name="name" id="username">
+          <label for="adhar"><b>Aadhar Card No.</b></label>
+          <input type="text" placeholder="Enter Aadhar Card No." name="adhar" id="aadhar">
           <label for="psw"><b>Contact No.</b></label>
-          <input type="text" placeholder="Enter Contact No." name="contact" id="contact">
+          <input type="text" placeholder="Enter Contact No." name="mobile" id="contact">
           <label for="dob"><b>Date of Birth</b></label>
           <input type="date" placeholder="Enter Dob" name="dob" id="dob">
-          <label for="photo"><b>Photo</b></label>
-          <input type="file" name="photo" id="photo" accept="image/*"><br>
+          <!-- <label for="photo"><b>Photo</b></label> -->
+          <!-- <input type="file" name="pic" id="pic" accept="pic/pdf"><br> -->
           <button type="submit" >Submit</button>
         </div>
       </form>

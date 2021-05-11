@@ -6,7 +6,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path("", views.doctor, name = "doctor"),
-    # path("A/", views.A, name="A"),
-    # path("insert/", views.insert, name="insert"),
-    # path('<int:A_id>', views.detail, name='detail'),
+    path("add/", views.add, name="add"),
+    path("check/", views.check, name="check"),
+    # path('<int:table_id>', views.detail, name='detail'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
